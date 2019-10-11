@@ -1,0 +1,139 @@
+/*=============================================
+  =            form            =
+  =============================================*/
+
+#form {
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0px 0px 3px #E1E1E1;
+  border: 1px solid #D6D6D6;
+  padding: 10px;
+}
+
+.templateWrapper {
+  box-shadow: 0px 0px 3px #E1E1E1;
+}
+
+#form ul {
+  list-style: none;
+}
+
+#form .zf-labelName {
+  font-size: 13px;
+  color: #444444;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.zf-nameWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .zf-nameWrapper {
+    flex-direction: row;
+  }
+}
+
+.zf-nameWrapper span {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .zf-nameWrapper span:first-child {
+    margin-right: 20px;
+  }
+}
+
+.zf-nameWrapper span label {
+  display: block;
+  font-size: 11px;
+  color: #888888;
+}
+
+#form input[type="text"] {
+  padding: 5px;
+  font-size: 13px;
+}
+
+input[type="text"],
+input[type="search"],
+textarea {
+  border: 1px solid #e5e5e5;
+}
+
+input[type="text"]:hover,
+input[type="search"]:hover,
+textarea:hover {
+  border: 1px solid #ccc !important;
+}
+
+.zf-tempFrmWrapper {
+  margin: 15px 0;
+}
+
+.zf-subContWrap ul {
+  width: 75%;
+}
+
+.zf-subContWrap ul input {
+  width: 100%;
+}
+
+.zf-submitColor {
+  background: #eb2055;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: none;
+  display: block;
+  padding: 5px 15px;
+}
+
+/*=====  End of form  ======*/
+
+
+nav>.nav.nav-tabs {
+
+  border: none;
+  color: #fff;
+  background: #272e38;
+  border-radius: 0;
+
+}
+
+nav>div a.nav-item.nav-link,
+nav>div a.nav-item.nav-link.active {
+  border: none;
+  padding: 18px 25px;
+  color: #fff;
+  background: #eb2055;
+  border-radius: 0;
+}
+
+nav>div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: -54px;
+  left: -45%;
+  border: 15px solid transparent;
+  border-top-color: #eb2055;
+}
+
+@media (min-width:768px) {
+  nav>div a.nav-item.nav-link.active:after {
+    content: "";
+    position: relative;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #eb2055;
+  }
+}
